@@ -63,4 +63,16 @@
       font-weight: 300;
     }
   }
+
+  &.active {
+    i {
+      background-color: $primary;
+      color: #ffffff;
+      border-color: $primary;
+    }
+
+    .content {
+      color: $primary;
+    }
+  }
 }
