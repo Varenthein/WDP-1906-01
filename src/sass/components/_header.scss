@@ -162,15 +162,79 @@ header {
 
     .search-form {
       border: 1px solid $form-border-color;
+      border-left: none;
       display: inline-flex;
       height: 45px;
       color: $text-color;
 
+      /*SELECT A CATEGORY MENU STYLES*/
       .category {
-        border-right: 1px solid $form-border-color;
         display: flex;
+        width: 200px;
         align-items: center;
+        justify-content: center;
         position: relative;
+
+        a {
+          display: flex;
+          height: 43px;
+          align-items: center;
+          padding: 0;
+          margin-left: 5px;
+          color: #000;
+          text-decoration: none;
+          -webkit-transition: background-color 1s; /* Safari */
+          transition: background-color 1s;
+        }
+
+        li {
+          &:hover {
+            ul {
+              display: flex;
+              flex-direction: column;
+              position: absolute;
+              background-color: #fff;
+              top: 44px;
+            }
+          }
+        }
+
+        ul {
+          padding: 0;
+          margin: 0;
+          list-style-type: none;
+          z-index: 1;
+
+          > li {
+            width: 200px;
+            display: flex;
+            justify-content: center;
+            border: 1px solid #000;
+          }
+
+          ul {
+            display: none;
+            flex-direction: column;
+            background-color: #fff;
+            top: 44px;
+            width: 200px;
+            li {
+              display: flex;
+              border-top: none;
+              &:hover {
+                background-color: $primary;
+                a {
+                  color: #fff;
+                }
+              }
+              a {
+                display: flex;
+                width: 200px;
+                padding-left: 35px;
+              }
+            }
+          }
+        }
 
         i:first-child {
           color: $primary;
@@ -183,17 +247,6 @@ header {
           position: absolute;
           right: 10px;
           z-index: 0;
-        }
-
-        select {
-          -webkit-appearance: none;
-          border: 0;
-          background-color: transparent;
-          outline: none;
-          padding: 5px 30px 5px 35px;
-          font-size: 14px;
-          position: relative;
-          z-index: 1;
         }
       }
 
