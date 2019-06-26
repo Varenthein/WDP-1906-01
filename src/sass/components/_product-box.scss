@@ -2,6 +2,20 @@
   background-color: #ffffff;
   border: 1px solid #e1e1e1;
   margin-bottom: 2rem;
+  &:hover {
+    .photo {
+      .buttons {
+        display: flex;
+      }
+    }
+    .actions {
+      .price {
+        .btn-main-small {
+          background-color: $primary;
+        }
+      }
+    }
+  }
 
   .photo {
     position: relative;
@@ -27,7 +41,7 @@
     }
 
     .buttons {
-      display: flex;
+      display: none;
       justify-content: space-between;
     }
   }
