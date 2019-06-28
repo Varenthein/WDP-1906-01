@@ -284,3 +284,41 @@ header {
     }
   }
 }
+
+@media (max-width: 776px) {
+  header {
+    .top-bar {
+      .text-left {
+        padding-right: 0;
+        ul {
+          display: flex;
+          li {
+            a {
+              display: flex;
+              align-items: center;
+            }
+          }
+        }
+      }
+      .text-right {
+        max-width: 120px;
+        display: flex;
+        padding: 0;
+        ul {
+          li {
+            margin-left: 0;
+            .personal-data {
+              > p {
+                display: none;
+              }
+            }
+
+            i {
+              margin-right: 17px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
