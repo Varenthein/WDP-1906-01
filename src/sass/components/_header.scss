@@ -11,6 +11,15 @@ header {
         display: inline-block;
         line-height: 55px;
 
+        .personal-data {
+          display: flex;
+          align-items: center;
+
+          > p {
+            margin-bottom: 0;
+          }
+        }
+
         a {
           color: #ffffff;
           font-size: 13px;
