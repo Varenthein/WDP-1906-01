@@ -2,17 +2,21 @@
   border: 1px solid #b6b6b6;
   text-align: center;
   margin-top: 40px;
+
   &:hover {
     cursor: pointer;
+
     i {
       background-color: $primary;
       color: #ffffff;
       border-color: $primary;
     }
+
     .fas {
       color: #ffffff;
       border-color: $primary;
     }
+
     .content {
       color: $primary;
     }
@@ -20,6 +24,7 @@
 
   .icon {
     transform: translateY(-50%);
+    text-decoration: none;
 
     i {
       width: 60px;
