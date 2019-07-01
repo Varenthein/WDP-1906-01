@@ -5,7 +5,7 @@
   &:hover {
     .photo {
       .buttons {
-        display: flex;
+        visibility: visible;
       }
     }
     .actions {
@@ -41,7 +41,8 @@
     }
 
     .buttons {
-      display: none;
+      display: flex;
+      visibility: hidden;
       justify-content: space-between;
     }
   }
