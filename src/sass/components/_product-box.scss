@@ -14,6 +14,17 @@
     }
     overflow: hidden;
     align-items: flex-end;
+    z-index: 1;
+
+    >img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      z-index: -1;
+      object-fit: cover;
+    }
 
     .sale {
       position: absolute;
@@ -78,5 +89,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    .old-price {
+      color: gray;
+      text-decoration: line-through;
+    }
   }
 }
