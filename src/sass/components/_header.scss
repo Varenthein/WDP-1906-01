@@ -218,15 +218,19 @@ header {
             background-color: #fff;
             top: 44px;
             width: 200px;
+
             li {
               display: flex;
               border-top: none;
+
               &:hover {
                 background-color: $primary;
+
                 a {
                   color: #fff;
                 }
               }
+
               a {
                 display: flex;
                 width: 200px;
