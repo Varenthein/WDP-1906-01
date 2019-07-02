@@ -4,8 +4,32 @@
   margin-top: 40px;
   height: 150px;
 
+  a {
+    text-decoration: none;
+  }
+
+  &:hover {
+    cursor: pointer;
+
+    i {
+      background-color: $primary;
+      color: #ffffff;
+      border-color: $primary;
+    }
+
+    .fas {
+      color: #ffffff;
+      border-color: $primary;
+    }
+
+    .content {
+      color: $primary;
+    }
+  }
+
   .icon {
     transform: translateY(-50%);
+    text-decoration: none;
 
     i {
       width: 60px;
