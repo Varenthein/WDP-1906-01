@@ -1,6 +1,10 @@
 .post-box {
   margin-bottom: 2rem;
 
+  a {
+    text-decoration: none;
+  }
+
   &:hover {
     cursor: pointer;
     .post-info {
