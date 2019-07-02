@@ -18,7 +18,7 @@ header {
           &:hover {
             color: $primary;
             text-decoration: none;
-            @extend .hover-extend;
+            @extend %hover-extend;
           }
         }
       }
@@ -106,7 +106,7 @@ header {
         &:hover {
           .cart-icon {
             background-color: lighten($primary, 10%);
-            @extend .hover-extend;
+            @extend %hover-extend;
           }
         }
       }
@@ -152,7 +152,7 @@ header {
               background-color: $primary;
               color: #ffffff;
               border-color: $primary;
-              @extend .hover-extend;
+              @extend %hover-extend;
             }
 
             &.active {
@@ -196,7 +196,7 @@ header {
               position: absolute;
               background-color: #fff;
               top: 44px;
-              @extend .hover-extend;
+              @extend %hover-extend;
             }
           }
         }
@@ -227,7 +227,7 @@ header {
 
               &:hover {
                 background-color: $primary;
-                @extend .hover-extend;
+                @extend %hover-extend;
 
                 a {
                   color: #fff;

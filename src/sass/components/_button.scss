@@ -10,7 +10,7 @@
     color: #ffffff !important;
     background-color: $primary;
     text-decoration: none;
-    @extend .hover-extend;
+    @extend %hover-extend;
   }
 }
 
@@ -35,7 +35,7 @@
   &:hover {
     background-color: #2a2a2a;
     color: #ffffff;
-    @extend .hover-extend;
+    @extend %hover-extend;
   }
 
   &:focus {
@@ -50,6 +50,7 @@
     &:hover {
       background-color: #fff;
       color: $primary;
+      @extend %hover-extend;
     }
   }
 }

@@ -54,7 +54,7 @@
               left: 0;
               width: 100%;
               border-bottom: 4px solid $primary;
-              @extend .hover-extend;
+              @extend %hover-extend;
             }
           }
         }
@@ -84,7 +84,7 @@
           &.active,
           &:hover {
             background-color: $primary;
-            @extend .hover-extend;
+            @extend %hover-extend;
           }
         }
       }
