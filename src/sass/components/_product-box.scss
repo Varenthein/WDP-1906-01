@@ -2,6 +2,20 @@
   background-color: #ffffff;
   border: 1px solid #e1e1e1;
   margin-bottom: 2rem;
+  &:hover {
+    .photo {
+      .buttons {
+        visibility: visible;
+      }
+    }
+    .actions {
+      .price {
+        .btn-main-small {
+          background-color: $primary;
+        }
+      }
+    }
+  }
 
   .photo {
     position: relative;
@@ -14,6 +28,17 @@
     }
     overflow: hidden;
     align-items: flex-end;
+    z-index: 1;
+
+    >img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      z-index: -1;
+      object-fit: cover;
+    }
 
     .sale {
       position: absolute;
@@ -28,6 +53,7 @@
 
     .buttons {
       display: flex;
+      visibility: hidden;
       justify-content: space-between;
     }
   }
@@ -78,5 +104,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    .old-price {
+      color: gray;
+      text-decoration: line-through;
+    }
   }
 }
