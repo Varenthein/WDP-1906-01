@@ -228,7 +228,6 @@ header {
               &:hover {
                 background-color: $primary;
                 @extend %hover-extend;
-
                 a {
                   color: #fff;
                 }
