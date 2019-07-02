@@ -78,7 +78,6 @@
         @extend .far;
         @extend .fa-star;
 
-        &:hover,
         &.active,
         &.temp {
           @extend .fas;
