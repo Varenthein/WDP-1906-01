@@ -7,7 +7,7 @@ DO UZUPEŁNIENIA
 ## Demo
 
 DO UZUPEŁNIENIA
-
+rrer23
 ## Inicjacja projektu
 
 Po sklonowaniu projektu, zainstaluj wymagane paczki komendą `npm install` lub `yarn install`.
