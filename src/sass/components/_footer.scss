@@ -22,6 +22,7 @@ footer {
 
             &:hover {
               color: #ffffff;
+              @extend %hover-extend;
             }
           }
         }
@@ -71,6 +72,7 @@ footer {
 
             &:hover {
               color: $primary;
+              @extend %hover-extend;
             }
           }
         }
