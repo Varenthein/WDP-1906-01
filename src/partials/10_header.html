@@ -55,7 +55,7 @@
         <div class="col-md-4 col-lg-6">
           <form action="" class="search-form">
             <div class="row align-items-center">
-              <div class="col-md-12 col-lg-5 getcategory-column-1">
+              <div class="col-md-12 col-lg-5 d-none d-md-flex getcategory-column-1">
                 <div class="category">
                   <i class="fas fa-list-ul"></i>
                   <ul class="select-category">
@@ -75,7 +75,10 @@
                   <i class="fas fa-caret-down"></i>
                 </div>
               </div>
-              <div class="col-md-12 col-lg-7 getcategory-column-2">
+              <div class="col-md-12 col-lg-7 align-items-center getcategory-column-2">
+                <div class="d-md-none" id="mobile-icon">
+                  <i class="fas fa-list-ul"></i>
+                </div>
                 <div class="search-field">
                   <input placeholder="Search products..." type="text" />
                   <button><i class="fa fa-search"></i></button>
@@ -84,7 +87,7 @@
             </div>
           </form>
         </div>
-        <div class="col-md-8 col-lg-6 menu">
+        <div class="col-md-8 col-lg-6 d-none d-md-flex menu" id="menu-links">
           <ul>
             <li><a href="#" class="active">Home</a></li>
             <li><a href="#">Furniture</a></li>

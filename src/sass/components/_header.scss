@@ -295,3 +295,88 @@ header {
     }
   }
 }
+
+/* MEDIA QUERIES */
+
+@media (min-width: 576px) and (max-width: 991px) {
+  .menu-bar {
+    height: 100px;
+
+    .container > .row {
+      height: 100% !important;
+    }
+
+    .menu {
+      ul {
+        li {
+          a {
+            padding: 10px !important;
+          }
+        }
+      }
+    }
+
+    .getcategory-column-1 {
+      padding-left: 0;
+    }
+
+    .search-field {
+      border-left: 1px solid !important;
+      background-color: #fff;
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .menu-bar {
+    height: 100px;
+
+    .container > .row {
+      height: 100px !important;
+    }
+  }
+
+  .search-form {
+    width: 100%;
+
+    & > .row {
+      width: 100%;
+
+      .getcategory-column-2 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 15px !important;
+
+        i {
+          padding: 10px;
+        }
+
+        .search-field {
+          border-left: 1px solid;
+        }
+      }
+    }
+  }
+
+  .menu {
+    padding: 0;
+    top: 40%;
+
+    ul {
+      flex-direction: column;
+      z-index: 1;
+      background-color: #fff;
+      width: 100%;
+
+      li {
+        display: block !important;
+        margin-top: 18px;
+
+        a {
+          font-size: 16px !important;
+        }
+      }
+    }
+  }
+}
