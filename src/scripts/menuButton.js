@@ -1,6 +1,7 @@
 const hamburgerButton = document.getElementById('mobile-icon');
 const catInXs = document.getElementById('menu-links');
-const searchForm = document.querySelector('.getcategory-column-2');
+const searchField = document.getElementById('search-input');
+const menu = document.getElementById('whole-menu');
 
 hamburgerButton.addEventListener('click', () =>
   catInXs.classList.contains('d-none') ? rollDownMenu() : rollUpMenu()
@@ -8,10 +9,12 @@ hamburgerButton.addEventListener('click', () =>
 
 function rollDownMenu () {
   catInXs.classList.remove('d-none');
-  searchForm.style.top = '60%';
+  searchField.style.visibility = 'hidden';
+  menu.style.backgroundColor = '#723636';
 }
 
 function rollUpMenu () {
   catInXs.classList.add('d-none');
-  searchForm.style.top = '0';
+  searchField.style.visibility = 'visible';
+  menu.style.backgroundColor = '#fff';
 }
