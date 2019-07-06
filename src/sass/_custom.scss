@@ -1,0 +1,14 @@
+/* override bootstrap classes from bootstrap/_carousel.scss */
+
+.carousel-control-prev {
+  justify-content: flex-start;
+}
+
+.carousel-control-next {
+  justify-content: flex-end;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: $primary;
+}
