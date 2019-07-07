@@ -6,18 +6,24 @@ starsContainers.forEach(item => {
     const stars = item.querySelectorAll('.star');
     item.addEventListener('click', e => {
         if(e.target.classList.contains('star')){
-            const id = e.target.dataset.index;
-            removeState(stars);
-            addState(stars, id);
+            for(let i=0; i<stars.length; i++){
+                if(e.target === stars[i]) {
+                    removeState(stars);
+                    addState(stars, i);
+                }
+            } 
         }
     })
 
     item.addEventListener('mouseover', e => {
         if(e.target.classList.contains('star')){
-            const id = e.target.dataset.index;
-            for(i=0 ; i <= id ; i++) {
-            stars[i].classList.add('temp');
-            }
+            for(let i=0; i<stars.length; i++){
+                if(e.target === stars[i]) {
+                    for(j=0 ; j<= i ; j++) {
+                        stars[j].classList.add('temp');
+                    }
+                }
+            }          
         }
     }) 
 
