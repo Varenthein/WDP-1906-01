@@ -1,5 +1,21 @@
 /* override bootstrap classes from bootstrap/_carousel.scss */
 
+.carousel-indicators {
+  position: inherit;
+  bottom: 17px !important;
+
+  li {
+    width: auto;
+
+    .active {
+      a {
+        background-color: $primary;
+        @extend %hover-extend;
+      }
+    }
+  }
+}
+
 .carousel-control-prev {
   justify-content: flex-start;
 }
