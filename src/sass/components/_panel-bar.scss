@@ -1,6 +1,10 @@
 .panel-bar {
   margin-bottom: 30px;
 
+  .no-gutters {
+    width: calc(100% - 80px);
+  }
+
   .row > * {
     border-bottom: 4px solid #e2e2e2;
   }
@@ -34,7 +38,7 @@
       padding: 0;
       list-style: none;
       display: block;
-      
+
       li {
         display: inline-block;
         margin: 0 0.5rem;
@@ -63,6 +67,10 @@
       }
     }
   }
+}
+
+.tab-content {
+  position: relative;
 
   .dots {
     ul {
@@ -70,7 +78,10 @@
       padding: 0 0 0 1rem;
       list-style: none;
       background-color: #ffffff;
-      transform: translateY(15px);
+      display: flex;
+      position: absolute;
+      right: 0;
+      top: -40px;
 
       li {
         display: inline-block;
