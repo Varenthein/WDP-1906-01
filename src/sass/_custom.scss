@@ -1,16 +1,32 @@
 /* override bootstrap classes from bootstrap/_carousel.scss */
+.section--blog-posts {
+  .container {
+    .carousel {
+      .panel-bar {
+        .row {
+          .dots {
+            .carousel-indicators {
+              position: inherit;
+              bottom: 17px;
 
-.carousel-indicators {
-  position: inherit;
-  bottom: 17px !important;
+              li {
+                width: auto;
 
-  li {
-    width: auto;
-
-    .active {
-      a {
-        background-color: $primary;
-        @extend %hover-extend;
+                &.active {
+                  .dot {
+                    background-color: $primary;
+                  }
+                }
+                .dot {
+                  &:hover {
+                    background-color: $primary;
+                    @extend %hover-extend;
+                  }
+                }
+              }
+            }
+          }
+        }
       }
     }
   }
