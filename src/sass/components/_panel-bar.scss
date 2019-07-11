@@ -91,3 +91,25 @@
     }
   }
 }
+
+@media (max-width: 767px) {
+  .section--products {
+    .container {
+      .panel-bar {
+        .no-gutters {
+          > .menu {
+            flex: 0 0 auto;
+            width: auto;
+            max-width: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  #type-of-furniture {
+    font-size: 15px;
+  }
+}

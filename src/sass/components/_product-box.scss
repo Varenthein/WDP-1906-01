@@ -30,7 +30,7 @@
     align-items: flex-end;
     z-index: 1;
 
-    >img {
+    > img {
       position: absolute;
       top: 0;
       left: 0;
@@ -69,12 +69,20 @@
       letter-spacing: 1px;
     }
 
-    .stars {
-      a {
-        text-decoration: none;
+    .stars-container {
+      user-select: none;
+      
+      .star {
+        cursor: pointer;
         color: rgb(42, 42, 42);
         @extend .far;
         @extend .fa-star;
+
+        &.active,
+        &.temp {
+          @extend .fas;
+          color: $primary;
+        }
 
         &.full {
           @extend .fas;
