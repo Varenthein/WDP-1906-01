@@ -12,13 +12,9 @@
               li {
                 width: auto;
 
+                &:hover,
                 &.active {
                   .dot {
-                    background-color: $primary;
-                  }
-                }
-                .dot {
-                  &:hover {
                     background-color: $primary;
                     @extend %hover-extend;
                   }
