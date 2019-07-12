@@ -102,6 +102,7 @@
   }
 }
 
+
 /*STYLES FOR DOTS IN NEW FURNITURE SECTION */
 .tab-content {
   position: relative;
@@ -127,9 +128,26 @@
           &:hover {
             background-color: $primary;
             @extend %hover-extend;
+
+@media (max-width: 767px) {
+  .section--products {
+    .container {
+      .panel-bar {
+        .no-gutters {
+          > .menu {
+            flex: 0 0 auto;
+            width: auto;
+            max-width: none;
           }
         }
       }
     }
   }
 }
+
+@media (max-width: 400px) {
+  #type-of-furniture {
+    font-size: 15px;
+  }
+}
+

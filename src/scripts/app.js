@@ -1,4 +1,4 @@
-console.log('hello');
-
-/*IMPORT SCRIPTS*/
-import buttonState from './buttonState';
+/* IMPORT SCRIPTS */
+import './buttonState';
+import './menuButton';
+import './activateStar';
