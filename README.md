@@ -37,3 +37,4 @@ dla plików, które zostały wybrane do za-commit'owania.
 - struktura plików jest ułożona zgodnie z obowiązującymi zasadami
 - każda sekcja posiada oddzielny plik ze stylami .scss
 - nazwy klas odpowiadają poszczególnym sekcjom do których są przypisane
+- użyte biblioteki - Bootstrap, SASS, Flexbox
