@@ -2,7 +2,7 @@
 
 ## Opis projektu
 
-Projektem jest wykonanie sklepu internetowego z meblami.
+Projekt jest przykładową stroną sklepu zakodowaną z darmowego szablonu PSD, w celu nauki kodowania stron.
 
 ## Demo
 
