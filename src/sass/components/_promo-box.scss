@@ -67,12 +67,17 @@
     color: $text-color-white;
     text-transform: uppercase;
     font-weight: 600;
+    <<<<<<<HEAD
     font-size: 1.2rem;
+    =======>>>>>>> c565cac69c0a221151eca8ddafa2d15c40e574a6
     padding-left: 10px;
 
     ul {
       list-style: none;
+      <<<<<<<HEAD
       transform: translateY(-36px);
+      =======transform: translateY(-33px);
+      >>>>>>>c565cac69c0a221151eca8ddafa2d15c40e574a6
       display: flex;
       justify-content: flex-end;
       padding-right: 10px;
@@ -171,9 +176,9 @@ h5 {
     justify-content: center;
     position: relative;
     cursor: pointer;
+    <<<<<<<HEAD
     font-size: 1.2rem;
-
-    &:hover {
+    =======>>>>>>>c565cac69c0a221151eca8ddafa2d15c40e574a6 &:hover {
       background-color: $primary;
     }
   }
