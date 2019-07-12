@@ -2,7 +2,7 @@
 
 ## Opis projektu
 
-DO UZUPEŁNIENIA
+Projektem jest wykonanie sklepu internetowego z meblami.
 
 ## Demo
 
