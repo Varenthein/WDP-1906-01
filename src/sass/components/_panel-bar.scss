@@ -128,7 +128,13 @@
           &:hover {
             background-color: $primary;
             @extend %hover-extend;
-
+          }
+        }
+      }
+    }
+  }
+}
+    
 @media (max-width: 767px) {
   .section--products {
     .container {
