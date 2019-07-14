@@ -1,6 +1,14 @@
 .panel-bar {
   margin-bottom: 30px;
 
+  .new-furniture-wrapper {
+    width: calc(100% - 80px);
+
+    ul {
+      display: block;
+    }
+  }
+
   .row > * {
     border-bottom: 4px solid #e2e2e2;
   }
@@ -29,10 +37,12 @@
 
   .menu {
     text-align: center;
+
     ul {
       margin: 0;
       padding: 0;
       list-style: none;
+
       li {
         display: inline-block;
         margin: 0 0.5rem;
@@ -92,6 +102,39 @@
   }
 }
 
+
+/*STYLES FOR DOTS IN NEW FURNITURE SECTION */
+.tab-content {
+  position: relative;
+
+  .dots {
+    ul {
+      position: absolute;
+      right: 0;
+      top: -43px;
+
+      li {
+        display: inline-block;
+        margin-left: 0.5rem;
+
+        a {
+          display: block;
+          width: 13px;
+          height: 13px;
+          border-radius: 6px;
+          background-color: #e1e1e1;
+
+          &.active,
+          &:hover {
+            background-color: $primary;
+            @extend %hover-extend;
+          }
+        }
+      }
+    }
+  }
+}
+    
 @media (max-width: 767px) {
   .section--products {
     .container {
@@ -113,3 +156,4 @@
     font-size: 15px;
   }
 }
+
