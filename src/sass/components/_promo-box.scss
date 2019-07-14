@@ -1,3 +1,7 @@
+.section-promo {
+  padding: 0;
+}
+
 .promo-box {
   border: 1px solid #e1e1e1;
   text-align: center;
@@ -30,8 +34,23 @@
       transition: 0.4s;
       opacity: 0;
       position: absolute;
-      top: 30px;
+      top: 40px;
       left: 0;
+
+      .btn-add-to-cart {
+        background-color: #2a2a2a;
+        color: #ffffff;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 400;
+        text-decoration: none;
+        padding: 10px 15px;
+
+        &:hover {
+          background-color: $primary;
+          color: $text-color-white;
+        }
+      }
 
       .circle {
         padding-right: 20px;
@@ -61,21 +80,22 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 30px;
+    height: 40px;
     text-align: left;
     background-color: $form-border-color;
     color: $text-color-white;
     text-transform: uppercase;
     font-weight: 600;
     font-size: 1.2rem;
-    padding-left: 10px;
+    padding-left: 20px;
+    line-height: 40px;
 
     ul {
       list-style: none;
-      transform: translateY(-33px);
+      transform: translateY(-43px);
       display: flex;
       justify-content: flex-end;
-      padding-right: 10px;
+      padding-right: 15px;
 
       li {
         display: inline-block;
@@ -105,29 +125,32 @@
   }
 }
 
-h5 {
-  color: $primary;
-  font-size: 16px;
-  letter-spacing: 1px;
-}
+.promo-content {
+  h5 {
+    color: $primary;
+    font-size: 16px;
+    letter-spacing: 1px;
+    padding-top: 10px;
+  }
 
-.stars {
-  a {
-    text-decoration: none;
-    color: rgb(42, 42, 42);
+  .stars {
+    a {
+      text-decoration: none;
+      color: rgb(42, 42, 42);
 
-    @extend .far;
+      @extend .far;
 
-    @extend .fa-star;
+      @extend .fa-star;
 
-    &.full {
-      @extend .fas;
+      &.full {
+        @extend .fas;
+      }
     }
   }
 }
 
-.line {
-  margin: 0 10px;
+.promo-line {
+  margin: 10px;
   border-bottom: 1px solid $footer-claim-bg;
   position: relative;
 
@@ -142,11 +165,18 @@ h5 {
   }
 }
 
-.actions {
+.actions-icons {
   padding: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  .btn-outline {
+    &:hover {
+      background-color: $primary;
+      color: $text-color-white;
+    }
+  }
 
   .old-price {
     color: $text-color-grey;
@@ -154,78 +184,99 @@ h5 {
   }
 }
 
-.promo-photo-right {
-  .promo-img-right {
-    width: 100%;
-    height: auto;
-    max-height: 450px;
-    object-fit: cover;
+.promo-box-right {
+  text-align: center;
+  margin-top: 40px;
+  height: 450px;
+  max-height: 450px;
+  position: relative;
+  top: -1px;
+  z-index: 1;
+
+  .content {
+    color: rgb(42, 42, 42);
+    padding-bottom: 10px;
   }
 
-  .slide {
-    width: 100%;
-    height: 30px;
-    background: $text-color-black;
-    color: $text-color-white;
-    display: flex;
-    justify-content: center;
-    position: relative;
-    cursor: pointer;
-    font-size: 1.2rem;
-
-    &:hover {
-      background-color: $primary;
-    }
-  }
-
-  .s-left {
-    position: absolute;
-    top: 422px;
-    left: 0;
-  }
-
-  .s-right {
-    position: absolute;
-    top: 421px;
-    right: -100%;
-  }
-
-  .shop-now-box {
-    position: relative;
-
-    .shop-now {
+  .promo-photo-right {
+    .promo-img-right {
       width: 100%;
-      position: absolute;
-      top: 150px;
-      left: 0;
-      background: rgba($text-color-black, 0.5);
+      height: auto;
+      max-height: 449px;
+      object-fit: cover;
+    }
+
+    .slide {
+      width: 100%;
+      height: 40px;
+      background: $text-color-black;
       color: $text-color-white;
-      text-align: center;
-    }
-
-    .shop-indor {
-      font-size: 3rem;
-      font-weight: 400;
+      display: flex;
+      justify-content: center;
       position: relative;
-      top: 20px;
-    }
-
-    .shop-save {
-      font-size: 1.2rem;
-      font-weight: 300;
-      position: relative;
-      top: 20px;
-    }
-
-    .shop-now-btn {
-      width: 150px;
-      height: 50px;
-      background: $text-color-white;
-      border: none;
-      border-radius: 5px;
-      position: relative;
-      top: 25px;
       cursor: pointer;
+
+      .slide-arrow {
+        font-size: 3rem;
+        color: $text-color-white;
+        position: absolute;
+        top: -14px;
+      }
+
+      &:hover {
+        background-color: $primary;
+      }
+    }
+
+    .s-left {
+      position: absolute;
+      top: 411px;
+      left: 0;
+    }
+
+    .s-right {
+      position: absolute;
+      top: 410px;
+      right: -100%;
+    }
+
+    .shop-now-box {
+      position: relative;
+
+      .shop-now {
+        width: 100%;
+        position: absolute;
+        top: 150px;
+        left: 0;
+        background: rgba($text-color-black, 0.5);
+        color: $text-color-white;
+        text-align: center;
+      }
+
+      .shop-indor {
+        font-size: 3rem;
+        font-weight: 400;
+        position: relative;
+        top: 20px;
+      }
+
+      .shop-save {
+        font-size: 1.2rem;
+        font-weight: 300;
+        position: relative;
+        top: 20px;
+      }
+
+      .shop-now-btn {
+        width: 150px;
+        height: 50px;
+        background: $text-color-white;
+        border: none;
+        border-radius: 5px;
+        position: relative;
+        top: 25px;
+        cursor: pointer;
+      }
     }
   }
 }
