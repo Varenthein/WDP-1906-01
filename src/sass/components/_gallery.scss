@@ -1,5 +1,5 @@
 .section--gallery {
-  padding: 50px;
+  padding: 50px 0;
 
   .container {
     .row {
@@ -37,15 +37,18 @@
               position: relative;
 
               .row {
-                img {
+                height: 592px;
+
+                .img-box-background {
                   width: 100%;
+                  height: 100% !important;
                   background-size: cover;
                   height: 450px;
                 }
 
                 .outlines {
                   position: absolute;
-                  top: 25%;
+                  top: 30%;
                   left: 5%;
 
                   button {
@@ -61,7 +64,7 @@
 
                 .price-in-box {
                   position: relative;
-                  transform: translate(20rem, -13rem);
+                  transform: translate(20rem, -16rem);
                   text-align: center;
                   z-index: 1;
 
@@ -92,7 +95,7 @@
                   background-color: white;
                   width: 295px;
                   height: 100px;
-                  transform: translate(11.5rem, 20rem);
+                  transform: translate(12.5rem, 26rem);
                   text-align: center;
 
                   h5 {
@@ -121,39 +124,71 @@
                     bottom: -3%;
                     left: 89%;
                   }
+
+                  .stars-container {
+                    user-select: none;
+
+                    .star {
+                      cursor: pointer;
+                      color: rgb(42, 42, 42);
+                      @extend .far;
+                      @extend .fa-star;
+
+                      &.active,
+                      &.temp {
+                        @extend .fas;
+                        color: $primary;
+                      }
+
+                      &.full {
+                        @extend .fas;
+                      }
+                    }
+                  }
                 }
               }
             }
 
             .gallery-slider {
-              height: 50px;
+              height: 100px;
               border: 1px solid $gallery-border;
 
-              .row {
-                .slider-button {
-                  padding: 0 5px;
-                  background-color: black;
+              .slider-button {
+                background-color: black;
+                width: 5%;
+                height: calc(100% - 28px);
+                display: flex;
+                justify-content: center;
+                align-items: center;
 
-                  .carousel-control-prev {
-                    left: 40%;
-                  }
-
-                  .carousel-control-next {
-                    right: 40%;
-                  }
+                i {
+                  color: #fff;
                 }
+              }
 
-                .slider-images {
-                  .row {
-                    .slide-img {
-                      padding: 0 5px;
+              .slider-button-left {
+                margin-left: 5px;
+              }
 
-                      img {
-                        height: 50px;
-                        width: 100%;
-                        background-size: cover;
-                      }
-                    }
+              .slider-button-right {
+                margin-right: 5px;
+              }
+
+              .slider-images {
+                display: flex;
+                justify-content: space-around;
+                width: 90%;
+                padding: 5px;
+                position: relative;
+
+                img {
+                  height: 70px;
+                  width: 70px;
+                  object-fit: cover;
+                  filter: brightness(50%);
+
+                  &.active {
+                    filter: none;
                   }
                 }
               }
