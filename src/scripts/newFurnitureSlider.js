@@ -7,7 +7,7 @@ let bedSlider = tns({
   autoplay: false,
   autoplayButtonOutput: false,
   preventScrollOnTouch: 'auto',
-  gutter: 2,
+  gutter: 4,
   responsive: {
     0: {
       items: 1

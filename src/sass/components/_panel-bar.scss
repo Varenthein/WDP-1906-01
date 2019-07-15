@@ -107,6 +107,15 @@
 .tab-content {
   position: relative;
 
+  .tab-pane {
+    .tns-ovh {
+      .col-12 {
+        padding-right: 0;
+        padding-left: 5;
+      }
+    }
+  }
+
     .tns-nav {
       position: absolute;
       right: 0;
