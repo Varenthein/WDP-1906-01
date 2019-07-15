@@ -2,11 +2,11 @@
 
 ## Opis projektu
 
-DO UZUPEŁNIENIA
+Projekt jest przykładową stroną sklepu zakodowaną z darmowego szablonu PSD, w celu nauki kodowania stron.
 
 ## Demo
 
-DO UZUPEŁNIENIA
+https://elated-lichterman-a7b7db.netlify.com/
 
 ## Inicjacja projektu
 
@@ -34,4 +34,7 @@ dla plików, które zostały wybrane do za-commit'owania.
 
 ## Konwencje i dobre praktyki
 
-DO UZUPEŁNIENIA
+- struktura plików jest ułożona zgodnie z obowiązującymi zasadami
+- każda sekcja posiada oddzielny plik ze stylami .scss
+- nazwy klas odpowiadają poszczególnym sekcjom do których są przypisane
+- użyte technologie - Bootstrap, SASS
