@@ -6,8 +6,9 @@
         .row {
           .dots {
             .carousel-indicators {
-              position: inherit;
-              bottom: 17px;
+              position: static;
+              margin: 0 13.2px 16px 13.2px;
+              padding: 0;
 
               li {
                 width: auto;
