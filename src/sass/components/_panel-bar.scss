@@ -107,32 +107,31 @@
 .tab-content {
   position: relative;
 
-  .dots {
-    ul {
+    .tns-nav {
       position: absolute;
       right: 0;
-      top: -43px;
+      top: -40px;
+      display: flex;
 
-      li {
-        display: inline-block;
-        margin-left: 0.5rem;
-
-        a {
+        button {
           display: block;
           width: 13px;
           height: 13px;
+          margin: 0 5px;
           border-radius: 6px;
           background-color: #e1e1e1;
+          border: none;
+          outline: none;
+          cursor: pointer;
 
-          &.active,
+          &.tns-nav-active,
           &:hover {
             background-color: $primary;
             @extend %hover-extend;
           }
         }
-      }
+      
     }
-  }
 }
     
 @media (max-width: 767px) {
@@ -147,6 +146,15 @@
           }
         }
       }
+    }
+  }
+}
+
+@media (max-width: 460px) {
+  .tab-content {
+    .tns-nav {
+      top: -21px;
+      left: 0;
     }
   }
 }
