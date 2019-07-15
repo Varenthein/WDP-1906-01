@@ -4,9 +4,9 @@ var slider = tns({
   slideBy: 'page',
   speed: 600,
   controls: false,
-  autoplay: true,
+  autoplay: false,
   autoplayButtonOutput: false,
-  gutter: 5,
+  preventScrollOnTouch: 'auto',
   responsive: {
     0: {
       items: 1
