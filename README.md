@@ -6,7 +6,7 @@ DO UZUPEŁNIENIA
 
 ## Demo
 
-DO UZUPEŁNIENIA
+https://elated-lichterman-a7b7db.netlify.com/
 
 ## Inicjacja projektu
 
