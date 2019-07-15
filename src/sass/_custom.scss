@@ -1,0 +1,43 @@
+/* override bootstrap classes from bootstrap/_carousel.scss */
+.section--blog-posts {
+  .container {
+    .carousel {
+      .panel-bar {
+        .row {
+          .dots {
+            .carousel-indicators {
+              position: static;
+              margin: 0 13.2px 16px 13.2px;
+              padding: 0;
+
+              li {
+                width: auto;
+
+                &:hover,
+                &.active {
+                  .dot {
+                    background-color: $primary;
+                    @extend %hover-extend;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.carousel-control-prev {
+  justify-content: flex-start;
+}
+
+.carousel-control-next {
+  justify-content: flex-end;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: $primary;
+}
