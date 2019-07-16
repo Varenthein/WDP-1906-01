@@ -8,6 +8,7 @@ let bedSlider = tns({
   autoplayButtonOutput: false,
   preventScrollOnTouch: 'auto',
   gutter: 4,
+  mouseDrag: true,
   responsive: {
     0: {
       items: 1
@@ -33,6 +34,7 @@ let chairSlider = tns({
   autoplay: false,
   autoplayButtonOutput: false,
   preventScrollOnTouch: 'auto',
+  mouseDrag: true,
   responsive: {
     0: {
       items: 1
@@ -58,6 +60,7 @@ let sofaSlider = tns({
   autoplay: false,
   autoplayButtonOutput: false,
   preventScrollOnTouch: 'auto',
+  mouseDrag: true,
   responsive: {
     0: {
       items: 1
@@ -83,6 +86,7 @@ let tableSlider = tns({
   autoplay: false,
   autoplayButtonOutput: false,
   preventScrollOnTouch: 'auto',
+  mouseDrag: true,
   responsive: {
     0: {
       items: 1
@@ -108,6 +112,7 @@ let diningSlider = tns({
   autoplay: false,
   autoplayButtonOutput: false,
   preventScrollOnTouch: 'auto',
+  mouseDrag: true,
   responsive: {
     0: {
       items: 1
