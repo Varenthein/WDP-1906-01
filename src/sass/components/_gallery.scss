@@ -54,7 +54,8 @@
 
                 .outlines {
                   position: absolute;
-                  top: 30%;
+                  top: 50%;
+                  transform: translate(0, -50%);
                   left: 1%;
 
                   button {
