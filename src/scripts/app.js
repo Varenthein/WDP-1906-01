@@ -2,4 +2,4 @@
 import './buttonState';
 import './menuButton';
 import './activateStar';
-
+import './promoRightSlider';

@@ -186,7 +186,7 @@
 
 .promo-box-right {
   text-align: center;
-  margin-top: 40px;
+  margin-top: 41px;
   height: 450px;
   max-height: 450px;
   position: relative;
@@ -199,11 +199,21 @@
   }
 
   .promo-photo-right {
-    .promo-img-right {
-      width: 100%;
-      height: auto;
-      max-height: 449px;
-      object-fit: cover;
+    .slider-container {
+      position: absolute;
+      overflow: hidden;
+
+      .slider-images {
+        display: flex;
+        z-index: -1;
+
+        .promo-img-right {
+          width: 100%;
+          height: auto;
+          max-height: 449px;
+          object-fit: cover;
+        }
+      }
     }
 
     .slide {
@@ -276,6 +286,11 @@
         position: relative;
         top: 25px;
         cursor: pointer;
+
+        &:hover {
+          background-color: $primary;
+          color: $text-color-white;
+        }
       }
     }
   }
