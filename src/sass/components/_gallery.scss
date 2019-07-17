@@ -48,7 +48,7 @@
 
                 .img-box-background {
                   width: 100%;
-                  background-size: cover;
+                  object-fit: cover;
                   max-height: 400px;
                 }
 
@@ -122,7 +122,7 @@
 
                   &::before {
                     transform: rotate(-45deg);
-                    top: -3.25px;
+                    top: -3.75px;
                     left: -16px;
                   }
 
@@ -199,7 +199,6 @@
                 img {
                   height: 70px;
                   width: 70px;
-                  object-fit: cover;
                   filter: brightness(65%);
 
                   &.active {
