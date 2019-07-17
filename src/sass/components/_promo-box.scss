@@ -12,73 +12,87 @@
   .content {
     color: rgb(42, 42, 42);
     padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
   }
 
   .promo-photo-left {
-    position: relative;
-    overflow: hidden;
+    display: flex;
+    flex-direction: column;
     align-items: flex-end;
     padding-bottom: 10px;
 
-    .promo-img-left {
-      width: 100%;
-      height: auto;
-      max-height: 300px;
-      object-fit: cover;
-    }
-
     .promo-add-to-cart {
-      width: 100%;
-      height: 100%;
-      line-height: 250px;
-      transition: 0.4s;
-      opacity: 0;
-      position: absolute;
-      top: 40px;
-      left: 0;
+      position: relative;
 
-      .btn-add-to-cart {
-        background-color: #2a2a2a;
-        color: #ffffff;
-        font-size: 16px;
-        line-height: 24px;
-        font-weight: 400;
-        text-decoration: none;
-        padding: 10px 15px;
+      .container {
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -25%);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 150px;
+        align-items: center;
+        z-index: 1;
+
+        .btn-add-to-cart {
+          background-color: #2a2a2a;
+          color: #ffffff;
+          font-size: 16px;
+          font-weight: 400;
+          text-decoration: none;
+          padding: 10px 15px;
+          width: 50%;
+
+          &:hover {
+            background-color: $primary;
+            color: $text-color-white;
+          }
+        }
+        .circle {
+          position: relative;
+
+          .col-3 {
+            padding: 0 5px;
+
+            .promo-add-to-cart-circle {
+              background: rgba($text-color-black, 0.7);
+              width: 70px;
+              height: 70px;
+              border-radius: 50%;
+              color: $text-color-white;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
+          }
+        }
 
         &:hover {
-          background-color: $primary;
-          color: $text-color-white;
+          opacity: 1;
         }
       }
 
-      .circle {
-        padding-right: 20px;
-        position: relative;
-        top: -70px;
+      .left-slider-container {
+        z-index: 0;
+        overflow: hidden;
 
-        .promo-add-to-cart-circle {
-          background: rgba($text-color-black, 0.7);
-          width: 70px;
-          height: 70px;
-          border-radius: 50%;
-          color: $text-color-white;
+        .left-slider-images {
           display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-      }
+          width: 100%;
 
-      &:hover {
-        opacity: 1;
+          .promo-img-left {
+            width: 100%;
+            height: 260px;
+            object-fit: cover;
+          }
+        }
       }
     }
   }
 
   .hot-deals {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 40px;
     text-align: left;
@@ -205,12 +219,12 @@
 
       .slider-images {
         display: flex;
-        z-index: -1;
+        width: 730px;
 
         .promo-img-right {
           width: 100%;
           height: auto;
-          max-height: 449px;
+          max-height: 420px;
           object-fit: cover;
         }
       }
@@ -240,13 +254,13 @@
 
     .s-left {
       position: absolute;
-      top: 411px;
+      top: 410px;
       left: 0;
     }
 
     .s-right {
       position: absolute;
-      top: 410px;
+      top: 409px;
       right: -100%;
     }
 
