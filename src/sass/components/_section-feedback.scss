@@ -35,7 +35,7 @@
   .feedback-text {
     width: 95%;
     padding-left: 5%;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
     text-align: center;
 
     .quote {
@@ -47,6 +47,32 @@
       font-size: 1rem;
       line-height: 24px;
       color: #676767;
+    }
+
+    .feedback-client {
+      padding-top: 10px;
+
+      .feedback-client-img {
+        width: 60px;
+        height: 60px;
+        object-fit: cover;
+        border-radius: 5px;
+      }
+
+      .texts {
+        font-size: 1rem;
+        color: #676767;
+        display: inline-block;
+        position: relative;
+        top: 15px;
+        text-align: left;
+        padding-left: 15px;
+
+        .text2 {
+          font-weight: 700;
+          font-size: 1.2rem;
+        }
+      }
     }
   }
 }
