@@ -1,0 +1,54 @@
+.section-brands {
+  padding-bottom: 40px;
+
+  .brands-line {
+    border-bottom: 1px solid #e1e1e1;
+    position: relative;
+  }
+
+  .brands-box {
+    height: 141px;
+    max-height: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 24px 0;
+
+    .arrow {
+      background: #2a2a2a;
+      height: 95px;
+      max-height: 100px;
+      width: 35px;
+      color: $text-color-white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 2rem;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $primary;
+        color: $text-color-white;
+      }
+    }
+
+    .brands-area {
+      width: 89%;
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+
+      .brand {
+        width: 140px;
+        height: 90px;
+        padding: 2px 0;
+
+        img {
+          width: 140px;
+          height: 90px;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}
