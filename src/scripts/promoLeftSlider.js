@@ -7,11 +7,10 @@ const imgWidth = 348;
 leftPromoSlider.style.transform = 'translateX(' + -imgWidth + 'px)';
 
 function slidePromoImages (num) {
-  let count = num;
   promoDotBtns.forEach(item => item.classList.remove('active'));
-  promoDotBtns[count - 1].classList.add('active');
+  promoDotBtns[num - 1].classList.add('active');
   leftPromoSlider.style.transition = 'transform 0.5s ease-in-out';
-  leftPromoSlider.style.transform = 'translateX(' + -count * imgWidth + 'px)';
+  leftPromoSlider.style.transform = 'translateX(' + -num * imgWidth + 'px)';
 }
 
 for (let i = 0; i < promoDotBtns.length; i++) {

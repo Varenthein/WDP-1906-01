@@ -13,7 +13,7 @@ rightPromoSlider.style.transform = 'translateX(' + -size * counter + 'px)';
 // event listeners
 
 nextBtn.addEventListener('click', () => {
-  if (!(counter >= rightPromoSliderImg.length - 1)) {
+  if (counter < rightPromoSliderImg.length - 1) {
     rightPromoSlider.style.transition = 'transform 0.5s ease-in-out';
     counter++;
     rightPromoSlider.style.transform = 'translateX(' + -size * counter + 'px)';
@@ -21,7 +21,7 @@ nextBtn.addEventListener('click', () => {
 });
 
 prevBtn.addEventListener('click', () => {
-  if (!(counter <= 0)) {
+  if (counter > 0) {
     rightPromoSlider.style.transition = 'transform 0.5s ease-in-out';
     counter--;
     rightPromoSlider.style.transform = 'translateX(' + -size * counter + 'px)';
