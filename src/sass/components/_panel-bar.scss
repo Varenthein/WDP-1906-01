@@ -2,7 +2,7 @@
   margin-bottom: 30px;
 
   .new-furniture-wrapper {
-    width: calc(100% - 80px);
+    width: calc(100% - 50px);
 
     ul {
       display: block;
@@ -109,30 +109,53 @@
 .tab-content {
   position: relative;
 
-  .dots {
-    ul {
+  .tab-pane {
+    .tns-ovh {
+      .col-12 {
+        padding-right: 0;
+        padding-left: 5;
+      }
+    }
+
+    .row {
+      padding-left: 15px;
+    }
+  }
+
+    .tns-nav {
       position: absolute;
       right: 0;
-      top: -43px;
+      top: -40px;
+      display: flex;
 
-      li {
-        display: inline-block;
-        margin-left: 0.5rem;
-
-        a {
+        button {
           display: block;
           width: 13px;
           height: 13px;
+          margin: 0 5px;
           border-radius: 6px;
+          padding: 0;
           background-color: #e1e1e1;
+          border: none;
+          outline: none;
+          cursor: pointer;
 
-          &.active,
+          &.tns-nav-active,
           &:hover {
             background-color: $primary;
             @extend %hover-extend;
           }
         }
-      }
+      
+    }
+}
+
+@media (max-width: 992px) {
+  .panel-bar {
+    margin-bottom: 30px;
+  
+    .new-furniture-wrapper {
+      width: calc(100% - 70px);
     }
   }
 }
@@ -153,9 +176,20 @@
   }
 }
 
+@media (max-width: 560px) {
+  .tab-content {
+    .tns-nav {
+      top: -21px;
+      left: 0;
+    }
+  }
+}
+
 @media (max-width: 400px) {
   #type-of-furniture {
     font-size: 15px;
   }
 }
+
+
 
